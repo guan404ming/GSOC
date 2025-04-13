@@ -12,7 +12,7 @@ This repository contains my project proposals for Google Summer of Code 2025.
 
 ## About Me
 
-I am a student from Taiwan, currently studying Information Management at National Taiwan University. I am passionate about open-source software and a member of the NumPy organization. I have extensive experience with Python, JavaScript/TypeScript, and web frameworks, and I am currently interning as a Frontend Developer at Microsoft.
+I am a student from Taiwan, currently studying Information Management at National Taiwan University. I am passionate about open-source software and a member of the NumPy organization. I have extensive experience with Python, TypeScript, and web frameworks, and I am currently interning as a Frontend Developer at Microsoft.
 
 ## Contact
 
