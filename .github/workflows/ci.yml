@@ -33,4 +33,16 @@ jobs:
         with:
           args: --verbose --no-progress '*.md'
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        
+  check-file-size:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Check file size
+        run: |
+          find . -name "*.md" -type f -exec du -h {} \; | sort -hr
+          find . -name "*.md" -type f -size +3M | while read file; do
+            echo "::warning::File $file is larger than 3MB"
+          done 
