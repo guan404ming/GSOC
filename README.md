@@ -23,14 +23,14 @@ This project contains two simple containerized applications:
 
 ### Option 1: Build from Source
 
-#### Python Application
+#### Python Image
 
 ```bash
 cd python-app
 docker build -t wesley1117/2025cloud:python-app .
 ```
 
-#### Node.js Application
+#### Node.js Image
 
 ```bash
 cd node-app

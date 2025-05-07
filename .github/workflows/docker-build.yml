@@ -25,13 +25,13 @@ jobs:
       - name: Build and push Python app
         uses: docker/build-push-action@v4
         with:
-          context: ./python-app
+          context: ./2025cloud/python-app
           push: true
           tags: wesley1117/2025cloud:python-app-${{ github.sha }},wesley1117/2025cloud:python-app-latest
 
       - name: Build and push Node.js app
         uses: docker/build-push-action@v4
         with:
-          context: ./node-app
+          context: ./2025cloud/node-app
           push: true
           tags: wesley1117/2025cloud:node-app-${{ github.sha }},wesley1117/2025cloud:node-app-latest 
